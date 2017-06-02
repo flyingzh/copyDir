@@ -1,14 +1,14 @@
 # 拷贝文件夹到指定文件夹
 
-   /**
-	 * 拷贝文件夹到一个新的文件
-	 * 
-	 * @param newPath 要拷贝的文件路径
-	 * @param oldPath 要拷贝到哪个路径
-	 * @throws IOException 异常抛出由调用者处理
-	 */
-   
-	public static void copyDirs(String oldPath, String newPath) throws IOException {
+   ```
+/**
+ * 拷贝文件夹到一个新的文件
+ * 
+ * @param newPath 要拷贝的文件路径
+ * @param oldPath 要拷贝到哪个路径
+ * @throws IOException 异常抛出由调用者处理
+ */
+public static void copyDirs(String oldPath, String newPath) throws IOException {
 		(new File(newPath)).mkdirs();
 		File f = new File(oldPath);
 		String[] list = f.list();
@@ -32,3 +32,4 @@
 			}
 		}
 	}
+```
